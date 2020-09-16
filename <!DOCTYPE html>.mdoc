@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- everything in here is now html -->
+<head>
+    <meta charset="UTF-8">
+    <title>Some Common HTML Stuff</title>
+</head>
+<body>
+    <!-- There are some escape characters that you may need to use, &gt; &lt - just html escapes -->
+    <!-- This lets us write html that just gets rendered as text -->
+    <h1>Some Common HTML Tags and Other Stuff</h1>
+    <section>
+        <hr>
+        <h2>Paragraph Tags</h2>
+        <p>
+            <code>&lt;p&gt;</code> tags are for containing blocks of text. A paragraph tag is a block level element, so each paragraph tag takes up its own line.
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p">Learn More!</a> 
+        </p>
+    </section>
+    <section>
+    <hr>
+    <h2>Heading Tags</h2>
+    <p>
+        <code>&lt;h1&gt; - &lt;h6&gt;</code> tags are for containing larger titles or subtitles. Not to be confused with header or head tags.
+        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">Learn More!</a>
+    </p>
+    </section>
+    <section>
+        <h2>Horizontal Rule Tags</h2>
+        <p>
+            <code>&lt;hr /&gt;</code> tags are for separating content with a horizontal line. This element is self closing, so you would just write <code>&lt;hr&gt;</code> instead of <code>&lt;hr&gt;&lt;/hr&gt;</code> in your document. 
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr">Learn More!</a>
+        </p>
+    </section>
+    <section>
+        <hr>
+        <h2>Image Tags</h2>
+        <p>
+            <code>&lt;img /&gt;</code> tags are for representing images in your html. In order to display the image inside your img element, you need to direct the image you want to display. You pass this information into a <code>"src"</code> attribute where you attach to the img element.
+        </p>
+        <p>For exapmkle, this html: <br><code>&lt;img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/give-me-a-break-funny-coding-pun-dogboo.jpg" /&gt;</code></p>
+        <p>Produces this image in our document: <br><img width="200" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/give-me-a-break-funny-coding-pun-dogboo.jpg" /></p>
+        <p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank" >Learn More!</a>
+        </p>
+    </section>
+    <section>
+        <hr>
+        <h2>Anchor Tags</h2>
+        <p>
+            <code>&lt;a&gt;</code> tags are for creating hyperlinks in webpages. At a minimum, you need to provide an <code>"href"</code> attribute to the anchor tag. We pass the url we want our hyperlink to direct to in this attribute. This works the same way as <code>"src"</code> does in image.
+        </p>
+        <p>
+            For example, this HTML:
+            <code>&lt;a href=&quot;https:&#x2F;&#x2f;github.com&#x2f;&quot;&gt;Link To Github&lt;&#x2F;a&gt;</code>
+        </p>
+        <p>
+            Produces this hyperlink:
+            <a href="https://github.com/">Link to Github!</a>
+        </p>
+        <p>
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">Learn more!</a>
+        </p>
+    </section>
+    <section>
+        <hr>
+        <h2>Unordered and Ordered Lists</h2>
+        <p>
+            <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> tags are for rendering unordered lists in your html doc.
+        </p>
+        <p>For example, this HTML:</p>
+        <code>
+            &lt;ul&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Monday&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Tuesday&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Thursday&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+        </code>
+        <p>
+            Produces this list in our document:
+        </p>
+        <ul>
+            <li>Monday</li>
+            <li>Tuesday</li>
+            <li>Thurdsay</li>
+        </ul>
+        <p>We can produce an ordered list simply by swapping out the <code>ul</code> element for an <code>ol</code> element:</p>
+        <code>
+            &lt;ol&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Monday&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Tuesday&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Thursday&lt;/li&gt;<br>
+            &lt;/ol&gt;<br>
+        </code>
+        <p>
+            Produces this list in our document:
+        </p>
+        <ol>
+            <li>Monday</li>
+            <li>Tuesday</li>
+            <li>Thurdsay</li>
+        </ol>
+        <p>
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">Learn more! (Unordered)</a>
+            <br>
+            <br>
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol">Learn more! (Ordered)</a>
+        </p>
+    </section>
+    <section>
+        <hr>
+        <h2>Tables</h2>
+        <p>
+            <code>&lt;table&gt;</code> tags are for representing tabular data inside of a table. On their own <code>table</code> tags don't do much. So we nest <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, and <code>&lt;th&gt;</code> tags inside.
+        </p>
+        <p>
+            For example, this HTML:
+        </p>
+        <section>
+            <code>
+                &lt;table border=&quot;1&quot;&gt;
+                <br>&nbsp;&nbsp;&lt;tr&gt;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Company&lt;&#x2F;th&gt;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Contact&lt;&#x2F;th&gt;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Email&lt;&#x2F;th&gt;
+                <br>&nbsp;&nbsp;&lt;&#x2F;tr&gt;
+                <br>&nbsp;&nbsp;&lt;tr&gt;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Google&lt;&#x2F;td&gt;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Sergey Brin&lt;&#x2F;td&gt;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;sergey@google.com&lt;&#x2F;td&gt;
+                <br>&nbsp;&nbsp;&lt;&#x2F;tr&gt;
+                <br>&nbsp;&nbsp;&lt;tr&gt;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Facebook&lt;&#x2F;td&gt;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mark Zuckerburg&lt;&#x2F;td&gt;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;mark@facebook.com&lt;&#x2F;td&gt;
+                <br>&nbsp;&nbsp;&lt;&#x2F;tr&gt;
+                <br>&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Space X&lt;&#x2F;td&gt;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Elon Musk&lt;&#x2F;td&gt;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;elon@spacex.com&lt;&#x2F;td&gt;
+                <br>&nbsp;&nbsp;&lt;&#x2F;tr&gt;
+                <br>&nbsp;&nbsp;&lt;tr&gt;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Amazon&lt;&#x2F;td&gt;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jeff Bezos&lt;&#x2F;td&gt;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;jeff@amazon.com&lt;&#x2F;td&gt;
+                <br>&nbsp;&nbsp;&lt;&#x2F;tr&gt;
+                <br>&lt;&#x2F;table&gt;
+            </code>
+        </section>
+        <p>Produces this table:</p>
+        <table border="1">
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Google</td>
+                <td>Sergey Brin</td>
+                <td>sergey@google.com</td>
+            </tr>
+            <tr>
+                <td>Facebook</td>
+                <td>Mark Zuck</td>
+                <td>mark@facebook.com</td>
+            </tr>
+            <tr>
+                <td>Space X</td>
+                <td>Elon M</td>
+                <td>Elon@spacex.com</td>
+            </tr>
+        </table>
+        <p>
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">Learn more!</a>
+        </p>
+    </section>
+    <section>
+        <hr>
+        <h2>Division Tags</h2>
+        <p>
+            <code>&lt;div&gt;</code> tags are meant to be generic container elements with no semantic meaning other than those given to them by their classes and id attributes. You can group elements together by throwing them inside the save div tag.
+        </p>
+        <p>There are other more semantic HTML tags such as <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">articles</a> or
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">navs</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer">footers</a> which behave the exact same way as div elements do, but are designed to be
+            used for specifc purposes. These should be used whenever possible for a few reasons, but one of the most practical is that code is easier to understand and debug when things are named what they actually are.
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">Learn More!</a>
+          </p>
+    </section>
+    <section>
+        <hr>
+        <h2>Strong Tags</h2>
+        <p>
+            <code>&lt;strong&gt;</code> tags give any nest text a bold font weight. If you would like to make the text bold, put it inside the <code>&lt;strong&gt;<strong>this text will be bold</strong>&lt;/strong&gt;</code>. In addition to browsers rendering text inside strong elements as bold by default, strong has another semantic meaning. It is meant for text that is supposed to be serious or urgent.
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong">Learn More!</a>
+        </p>
+    </section>
+</body>
+</html>
